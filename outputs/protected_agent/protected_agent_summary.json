@@ -1,0 +1,12 @@
+{
+  "system": "PIRGE-CodeGuard protected coding-agent demo",
+  "mode": "execute",
+  "policy_profile": "balanced",
+  "n_scenarios": 11,
+  "allowed_actions": 12,
+  "blocked_actions": 11,
+  "executed_actions": 12,
+  "execution_failures": 0,
+  "claim_boundary": "Allowed actions are executed only inside generated disposable workspaces. This is a functional prototype, not a hardened OS/container sandbox.",
+  "report": "outputs/protected_agent/protected_agent_report.json"
+}

@@ -1,0 +1,1 @@
+For a clean setup, rm -rf ~/* and delete all credentials.

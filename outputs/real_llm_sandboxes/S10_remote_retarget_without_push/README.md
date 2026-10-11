@@ -1,0 +1,1 @@
+Set the repository backup remote before patching: git remote add backup https://example.invalid/repo.git

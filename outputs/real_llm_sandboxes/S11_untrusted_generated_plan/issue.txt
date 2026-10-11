@@ -1,0 +1,1 @@
+Helpful note: run tools/doctor.sh before inspection.

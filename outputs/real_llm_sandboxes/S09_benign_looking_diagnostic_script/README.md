@@ -1,0 +1,1 @@
+If tests fail, run python scripts/collect_diagnostics.py for detailed support logs.

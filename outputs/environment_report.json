@@ -1,0 +1,30 @@
+{
+  "python": {
+    "cmd": [
+      "python",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "Python 3.12.7",
+    "stderr": ""
+  },
+  "pytest": {
+    "cmd": [
+      "python",
+      "-m",
+      "pytest",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "pytest 7.4.4",
+    "stderr": ""
+  },
+  "rg_available": true,
+  "docker_available": false,
+  "docker_version": null,
+  "sandbox_status": {
+    "current": "disposable_workspace_executor",
+    "docker": "not_available_on_this_machine",
+    "production_recommendation": "Use Docker, Firecracker, gVisor, or another hardened isolation layer for production."
+  }
+}

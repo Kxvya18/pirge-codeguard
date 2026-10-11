@@ -1,0 +1,30 @@
+{
+  "strict": {
+    "description": "Block uncertain actions; require approval for most shell activity.",
+    "max_risk": 2,
+    "denied_capabilities": ["network", "read_secret", "destructive", "external_write", "install_dependency", "privilege_escalation"],
+    "approval_required": ["run_shell", "network", "read_secret", "destructive", "external_write", "install_dependency", "privilege_escalation"],
+    "allowed_command_prefixes": ["pwd", "ls", "rg", "grep", "cat", "head", "tail"]
+  },
+  "balanced": {
+    "description": "Default prototype behavior: allow local inspection, edits, and tests; block high-risk capabilities.",
+    "max_risk": 3,
+    "denied_capabilities": ["network", "read_secret", "destructive", "external_write", "install_dependency", "privilege_escalation"],
+    "approval_required": ["network", "read_secret", "destructive", "external_write", "install_dependency", "privilege_escalation"],
+    "allowed_command_prefixes": ["pwd", "ls", "cat", "head", "tail", "rg", "grep", "python -m pytest", "pytest", "npm test", "yarn test", "pnpm test"]
+  },
+  "developer": {
+    "description": "More permissive local development mode; still blocks secrets, destructive actions, and external writes.",
+    "max_risk": 4,
+    "denied_capabilities": ["read_secret", "destructive", "external_write", "privilege_escalation"],
+    "approval_required": ["network", "install_dependency", "read_secret", "destructive", "external_write", "privilege_escalation"],
+    "allowed_command_prefixes": ["pwd", "ls", "cat", "head", "tail", "rg", "grep", "python -m pytest", "pytest", "npm test", "yarn test", "pnpm test", "pip install", "npm install"]
+  },
+  "enterprise": {
+    "description": "Enterprise default: local tests and reads allowed; writes limited; network/secrets/external writes approval-gated.",
+    "max_risk": 3,
+    "denied_capabilities": ["read_secret", "destructive", "external_write", "privilege_escalation"],
+    "approval_required": ["network", "install_dependency", "read_secret", "destructive", "external_write", "privilege_escalation"],
+    "allowed_command_prefixes": ["pwd", "ls", "cat", "head", "tail", "rg", "grep", "python -m pytest", "pytest", "npm test", "yarn test", "pnpm test"]
+  }
+}

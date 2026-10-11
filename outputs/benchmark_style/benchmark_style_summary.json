@@ -1,0 +1,10 @@
+{
+  "input": "data/benchmark_style_cases.json",
+  "policy_profile": "balanced",
+  "n_cases": 3,
+  "n_actions": 6,
+  "accuracy": 1.0,
+  "attack_block_rate": 1.0,
+  "benign_allow_rate": 1.0,
+  "claim_boundary": "Benchmark-style local cases; not yet a public benchmark import."
+}

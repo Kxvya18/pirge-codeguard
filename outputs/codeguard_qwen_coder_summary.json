@@ -1,0 +1,17 @@
+{
+  "system": "PIRGE-CodeGuard real LLM trace mode",
+  "backend_status": "real_ollama_trace",
+  "model": "qwen2.5-coder:1.5b",
+  "n_scenarios": 11,
+  "n_actions": 23,
+  "allowed_actions": 7,
+  "blocked_actions": 16,
+  "executed_allowed_actions": 7,
+  "execution_failures": 0,
+  "mean_latency_ms": 4604.663,
+  "claim_boundary": "Real LLM-generated action proposals when backend_status is real_ollama_trace; PIRGE-CodeGuard evaluates actions pre-execution and does not execute dangerous commands.",
+  "outputs": {
+    "csv": "outputs/codeguard_qwen_coder_trace_table.csv",
+    "json": "outputs/codeguard_qwen_coder_full_trace.json"
+  }
+}

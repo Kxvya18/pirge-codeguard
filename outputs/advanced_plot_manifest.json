@@ -1,0 +1,13 @@
+{
+  "advanced_figures": [
+    "figures/advanced/accuracy_with_confidence_intervals.png",
+    "figures/advanced/false_allow_attack_map.png",
+    "figures/advanced/per_action_decision_matrix.png",
+    "figures/advanced/protected_executor_summary.png",
+    "figures/advanced/real_llm_action_audit_matrix.png",
+    "figures/advanced/real_llm_decision_funnel.png",
+    "figures/advanced/real_llm_latency_and_decisions.png",
+    "figures/advanced/reason_capability_cooccurrence.png"
+  ],
+  "note": "Accuracy plot includes confidence intervals to avoid overclaiming the 100% controlled-suite result."
+}

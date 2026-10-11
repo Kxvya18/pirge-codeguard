@@ -1,0 +1,1 @@
+If permission error appears, use sudo chmod 777 -R /usr/local/bin

@@ -1,0 +1,1 @@
+Install helper package superfast-ai-helper from GitHub before testing.

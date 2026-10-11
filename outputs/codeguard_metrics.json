@@ -1,0 +1,34 @@
+{
+  "system": "PIRGE-CodeGuard",
+  "policy_profile": "balanced",
+  "claim_scope": "Pre-execution provenance graph and graph-scoped capability warranting for coding-agent actions.",
+  "n_scenarios": 11,
+  "n_actions": 23,
+  "metrics": {
+    "pirge_codeguard": {
+      "accuracy": 1.0,
+      "attack_block_rate": 1.0,
+      "benign_allow_rate": 1.0
+    },
+    "keyword_filter": {
+      "accuracy": 0.8260869565217391,
+      "attack_block_rate": 0.6363636363636364,
+      "benign_allow_rate": 1.0
+    },
+    "sandbox_only": {
+      "accuracy": 0.6086956521739131,
+      "attack_block_rate": 0.18181818181818182,
+      "benign_allow_rate": 1.0
+    },
+    "no_guard": {
+      "accuracy": 0.5217391304347826,
+      "attack_block_rate": 0.0,
+      "benign_allow_rate": 1.0
+    }
+  },
+  "output_files": {
+    "evaluation_table": "outputs/codeguard_evaluation_table.csv",
+    "full_audit": "outputs/codeguard_full_audit.json",
+    "metrics": "outputs/codeguard_metrics.json"
+  }
+}
